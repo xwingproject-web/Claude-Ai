@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toko Jam Elegan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Elegan Watch</h1>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#catalog">Katalog</a>
+      <a href="#cart">Keranjang</a>
+    </nav>
+  </header>
+
+  <section id="catalog" class="catalog">
+    <h2>Katalog Jam Tangan</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="images/watch1.jpg" alt="Jam Klasik" />
+        <h3>Jam Klasik</h3>
+        <p>Rp 850.000</p>
+        <button onclick="addToCart('Jam Klasik', 850000)">Tambah ke Keranjang</button>
+      </div>
+      <div class="product">
+        <img src="images/watch2.jpg" alt="Jam Modern" />
+        <h3>Jam Modern</h3>
+        <p>Rp 1.200.000</p>
+        <button onclick="addToCart('Jam Modern', 1200000)">Tambah ke Keranjang</button>
+      </div>
+      <div class="product">
+        <img src="images/watch3.jpg" alt="Jam Sport" />
+        <h3>Jam Sport</h3>
+        <p>Rp 980.000</p>
+        <button onclick="addToCart('Jam Sport', 980000)">Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart" class="cart">
+    <h2>Keranjang Belanja</h2>
+    <ul id="cart-items"></ul>
+    <p id="total"></p>
+    <button id="checkout" onclick="checkout()">Bayar via WhatsApp</button>
+  </section>
+
+  <footer>
+    <p>© 2026 Elegan Watch. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
