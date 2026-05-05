@@ -22,7 +22,7 @@ function updateCart() {
 
 function checkout() {
   if (cart.length === 0) {
-    alert("Keranjang masih kosong!");
+    alert("Chart is empty!");
     return;
   }
 
